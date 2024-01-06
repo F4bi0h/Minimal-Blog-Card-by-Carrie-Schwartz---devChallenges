@@ -37,19 +37,22 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 8px 14px;
+    padding: 16px 14px;
     box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+    text-align: left;
 }
 .area-card .img-card img {
     width: 100%;
+    margin-top: -15px;
 }
 .area-card .img-card img,
 .area-card {
     border-radius: 14px;
 }
 .content-card {
-    padding-bottom: 16px;
+    padding-bottom: 22px;
     border-bottom: 1px solid var(--three-color);
+    padding-right: 12px;
 }
 .area-card .content-card h1 {
     font-size: 18px;
@@ -61,17 +64,19 @@ main {
 }
 .area-card .small {
     font-size: 10px;
-    margin-left: -83%;
 }
 .area-card .small-text {
-    margin-left: -80%;
     color: var(--seven-color);
+    margin-top: 25px;
 }
 .area-card .tag-card {
     background-color: var(--two-color);
     color: var(--one-color);
-    padding: 5px 10px;
+    padding: 5px 0;
     border-radius: 10px;
+    width: 60px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 640px){
@@ -86,11 +91,8 @@ main {
         padding: 8px 12px;
         box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
     }
-    .area-card .small {
-        font-size: 10px;
-        margin-left: -80%;
-    }
-    .area-card .small-text {
-        margin-left: -78%;
+    .area-card .img-card img {
+        width: 100%;
+        margin-top: 2px;
     }
 }
