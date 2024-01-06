@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora';
+}
+:root {
+    --one-color: #883AE1;
+    --two-color: #E6D6FC;
+    --three-color: #E5EAF0;
+    --four-color: #FAFAF9;
+    --five-color: #FFFFFF;
+    --six-color: #20293A;
+    --seven-color: #6C727F;
+}
+html,
+body {
+    height: 100%;
+}
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--four-color);
+}
+
+.area-card {
+    width: 25%;
+    height: 55%;
+    text-align: left;
+    background-color: var(--five-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px 14px;
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+}
+.area-card .img-card img {
+    width: 100%;
+}
+.area-card .img-card img,
+.area-card {
+    border-radius: 14px;
+}
+.content-card {
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--three-color);
+}
+.area-card .content-card h1 {
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+.area-card .content-card p {
+    font-size: 12px;
+    color: var(--seven-color);
+}
+.area-card .small {
+    font-size: 10px;
+    margin-left: -83%;
+}
+.area-card .small-text {
+    margin-left: -80%;
+    color: var(--seven-color);
+}
+.area-card .tag-card {
+    background-color: var(--two-color);
+    color: var(--one-color);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 640px){
+    .area-card {
+        width: 50%;
+        height: 55%;
+        background-color: var(--five-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 8px 12px;
+        box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+    }
+    .area-card .small {
+        font-size: 10px;
+        margin-left: -80%;
+    }
+    .area-card .small-text {
+        margin-left: -78%;
+    }
+}
